@@ -160,6 +160,9 @@ All signatures below were confirmed finalized. Addresses are commitments.
   Binary 268368 bytes, sha256
   `a50c98d07dc0bdaf7aa560d3ff4f2b5246bb2e447f81069e4f61bda96f40a798`, built
   locally; not a reproducible build.
+- That an old binary tolerates the extra trailing account was observed in
+  litesvm only (the baseline test passed against the pre-sweep program). It was
+  not tested on devnet, and cannot be now that the upgrade is done.
 - Upgrade tx `43bV1pbL4aXK3zVTjskPsRBQqyFv68KLp8cTyLnBtYYD9JCmaAgBcMiUYnXTnu8wAp6tC8cUiC2M5T1ZEA9Q8EJC`
   (Finalized), last deployed slot 508283076. A buffer dump matched the sha256
   before the upgrade; a dump of the deployed program matched it after, with no
@@ -178,7 +181,8 @@ All signatures below were confirmed finalized. Addresses are commitments.
   Finalized): escrow was already 0, payer input unchanged at 1150000, payer
   output 1300000 to 2300000, status Released.
 - The swap in these runs is the disclosed `mock_swap` stand-in, not a real
-  venue. Fifteen older Passed commitments remain unreleased. `refund` ran once on
+  venue. Fifteen older Passed commitments remained unreleased in a listing at slot
+  508312883, taken before the refund run. `refund` ran once on
   devnet, on a commitment that never reached the swap (see "Refund run"
   below). The fee is a design only and is not implemented.
 
