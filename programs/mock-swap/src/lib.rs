@@ -4,7 +4,7 @@
 use anchor_lang::prelude::*;
 use anchor_spl::token::{self, Token, TokenAccount, Mint, Transfer};
 
-declare_id!("3qqN3ZXc1SPEtDLdn9Ek68r9YtDc1mBVgdhS7r48d9vJ");
+declare_id!("6iz6J7eBmrukLmVkw8hqx3EQUSwYrFsHtTFtKoc4sabS");
 
 // Fixed exchange rate. Explicitly arbitrary — no price discovery.
 // amount_out = amount_in * RATE_NUMERATOR / RATE_DENOMINATOR

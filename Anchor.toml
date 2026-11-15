@@ -7,8 +7,8 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-trustrail_pipelines = "CgXidrtsV5nLkjPCYhZUPUuZUpmvekMKvDN9uh3ucoC8"
-mock_swap = "3qqN3ZXc1SPEtDLdn9Ek68r9YtDc1mBVgdhS7r48d9vJ"
+trustrail_pipelines = "5fjCsDhwfVJMmKZi87fipEDNJygqXcha9LnzWKxFoDq"
+mock_swap = "6iz6J7eBmrukLmVkw8hqx3EQUSwYrFsHtTFtKoc4sabS"
 
 [provider]
 cluster = "devnet"
@@ -22,4 +22,4 @@ wallet = "~/.config/solana/id.json"
 # `anchor build` first.
 test = "cargo test --manifest-path tests-litesvm/Cargo.toml"
 
-[hooks]
+# lab-skip [hooks]
